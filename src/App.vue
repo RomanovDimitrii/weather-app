@@ -35,7 +35,7 @@ export default {
       city: '',
       error: '',
       info: null,
-      imageUrl: '' // Сохраняем URL изображения здесь
+      imageUrl: '' // Сохраняем URL изображения 
     };
   },
   computed: {
@@ -82,7 +82,7 @@ export default {
         });
     },
     fetchCityImage(city) {
-      const apiKey = '45507249-b1448bebacb5be056e5d59560'; // Ваш API ключ Pixabay
+      const apiKey = '45507249-b1448bebacb5be056e5d59560'; 
       axios
         .get(`https://pixabay.com/api/?key=${apiKey}&q=${city}&image_type=photo`)
         .then(response => {
@@ -104,23 +104,23 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Фон для всей страницы */
+
 .page-background {
-  /* background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Основной контейнер */
+
 .wrapper {
   max-width: 900px;
   width: 100%;
   margin: 50px auto;
   border-radius: 20px;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.7); /* Полупрозрачный темный фон */
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -200,6 +200,6 @@ export default {
 
 .weather-details p {
   margin: 10px 0;
-  font-size: 1.2em; /* Увеличенный размер шрифта для данных о погоде */
+  font-size: 1.2em; 
 }
 </style>
